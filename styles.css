@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cormorant Garamond';
+}
+
+body {
+    background-color: hsl(60, 7%, 87%);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.p_hero {
+    font-size: 40px;
+}
+
+.h_hero {
+    font-size: 48px;
+}
+/*changing hero media quary*/
+@media (width <=1199px) {
+    .p_hero {
+        font-size: 28px;
+    }
+    
+    .h_hero {
+        font-size: 32px;
+    } 
+}
+/*container media query for xxl screen*/
+@media (min-width: 1800px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1500px;
+    }
+}
+
+.recent > img {
+    width: 100%;
+    height: auto; 
+}
+
+.recent {
+    position: relative;
+    width: 100%;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+  
+.recent:hover .overlay {
+    opacity: 1;
+}
+  
+.text_background {
+    color: black;
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*footer styles*/ 
+#footer {
+    background-color: hsl(330, 2%, 16%);
+    color: aliceblue;
+}
+
+.footer {
+    height: 420px;
+}
+ 
+@media (max-width: 991px) {
+    #footL {
+        text-align: center;
+    }
+    .google_maps {
+        height: 500px;
+    }
+}
+
+.footer_h1 {
+    font-size: 42px;
+}
+
+.footer_p {
+    font-size: 20px;
+}
+.footer_h3 {
+    font-size: 36px;
+}
